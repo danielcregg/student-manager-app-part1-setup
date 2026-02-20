@@ -1,55 +1,64 @@
-# Final Project
+# Student Manager App - Part 1: Setup
 
-**Title:** Items Application Manager<br>
-**Name:** Patrick Murphy<br>
-**Student ID:** G00123456<br>
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
 
-## Application Function
-Discuss, in detail, what the application does. Add a screenshot image of the application in use (See example of image added below).
+A Java starter project that provides the foundational class structure for building a student management application.
 
-## Running the Application
-Provide step by step instructions on how to run your applicaiton. Are there any prerequisite softwares required?
+## Overview
 
-```
-List the instructions step by step
-    1. Clone this repository to your desktop.
-    2. Open it with Eclipse
-            :
-            :
-```
-## Minimum Project Requirments
+This is Part 1 of a multi-part Java programming exercise designed for students at GMIT (Galway-Mayo Institute of Technology). It sets up the initial project scaffold with core classes for a student management system, including a `Student` model, a `StudentManager` service class, and a `Main` entry point. Students extend this foundation to implement full CRUD functionality with a menu-driven interface.
 
-Confirm and demonstrate how you have met all minimum project requirments:
+## Features
 
-* The project, including code and documentaion, will be fully contained in the provied Git Classroom repo.
-* The project must contain a working JavaFX GUI which manages items of your choice.
-* The GUI must at minimum provide access to all 7 methods implemented in the Student Manager App.
-* Methods = Load DB, Add Item, Delete Item, Find item by ID/Name, Show total items, Save to DB, Quit.
-* The code MUST compile. 30% grade reduction if code does not compile.
-* The application code must be formatted in a consistent and standard way.
-* The code must contain comments. One comment per class, method and variable at minimum.
-* There must be two commits per week minimum (Note: Should be many commits per day coding).
-* The documentation and commentary must be free of a grammar and speling mistakes.
+- **Project Scaffold** — Pre-configured Java package structure under `ie.gmit.studentmanagerpackage`
+- **Student Model** — Stub `Student` class ready for fields, constructors, and methods
+- **Manager Service** — Stub `StudentManager` class for implementing data operations
+- **Main Entry Point** — `Main` class with the application bootstrap logic
+- **DevContainer Support** — VS Code DevContainer with Java 21 (Zulu FX) and desktop-lite for GUI development
+- **Eclipse Compatible** — Includes `.project` and `.classpath` files for Eclipse IDE
 
-## Project Requirments above and beyond
+## Prerequisites
 
-Discuss any application features or design elements that show you went above and beyone basic requirments.
+- [Java JDK 21+](https://www.azul.com/downloads/?version=java-21-lts) (Zulu FX recommended for JavaFX support)
+- An IDE such as [Eclipse](https://www.eclipse.org/downloads/), [IntelliJ IDEA](https://www.jetbrains.com/idea/), or [VS Code](https://code.visualstudio.com/) with the Java Extension Pack
+- [Git](https://git-scm.com/downloads)
 
-## Application Architecture
-Discuss in detail how the application is structured. List all Classes. List their method and what they do. Discuss what structures are used to store data objects.
+## Getting Started
 
-Add a screenshot of the application architecture.
+### Installation
 
-## JavaFX
-Discuss the GUI design used. Discuss why you chose this design and any features you thing make your application stands out.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/danielcregg/student-manager-app-part1-setup.git
+   cd student-manager-app-part1-setup
+   ```
 
-![alt text](resources/javaFX.gif "My App")
+2. Open the project in your preferred IDE:
+   - **Eclipse:** File > Import > Existing Projects into Workspace
+   - **VS Code:** Open the folder and install recommended Java extensions
+   - **Codespaces:** Open in GitHub Codespaces for a pre-configured DevContainer environment
 
-## Roadblocks and Unfinished Functionality
-Discuss the issues you faced with creating your application. Provide possible solutions to these issues. What would you have done differently if you had to do this again? What did you not get finished?
+### Usage
 
-## Resources
-Provide links to resources used:
+1. Compile the Java source files:
+   ```bash
+   javac -d bin src/ie/gmit/studentmanagerpackage/*.java
+   ```
 
-* [Tutorialspoint](https://www.tutorialspoint.com/java/) - Java Tutorials site I found helpful
+2. Run the application:
+   ```bash
+   java -cp bin ie.gmit.studentmanagerpackage.Main
+   ```
 
+## Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Java 21 | Programming language |
+| Eclipse | Primary IDE support |
+| VS Code DevContainers | Cloud-based development environment |
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
